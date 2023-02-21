@@ -12,7 +12,6 @@ class Comment(MPTTModel):
     home_page = models.URLField(max_length=255, blank=True, null=True)
     text = models.TextField()
     publish = models.DateTimeField(auto_now_add=True)
-    status = models.BooleanField(default=True)
 
     class MPTTMeta:
         order_insertion_by = ["-publish"]
