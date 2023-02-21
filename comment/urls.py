@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import post_single
+from .views import comments_list_view
 
 app_name = "blog"
 
 urlpatterns = [
-    path("<slug:post>/", post_single, name="post_single"),
+    path("", comments_list_view, name="comment-list"),
 ]
