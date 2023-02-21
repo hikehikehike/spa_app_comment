@@ -4,7 +4,7 @@ Django online service for comments. You can leave as many comments as you like a
 
 ## Check it out!
 
-[Project deployed to Render](http://hikehikehike.pythonanywhere.com/)
+[Project deployed to Render](https://app-comment.onrender.com/)
 
 
 ## Installation
