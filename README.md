@@ -19,3 +19,9 @@ pip install -r requirements.txt
 python manage.py migrate
 python manage.py runserver
 ```
+
+## Installation with Docker hub
+```shell
+docker pull hikehikehike/comment
+docker run -p 8001:8000 hikehikehike/comment
+```
