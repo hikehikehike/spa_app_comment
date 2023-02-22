@@ -3,9 +3,8 @@ from .models import Comment
 from mptt.forms import TreeNodeChoiceField
 from captcha.fields import CaptchaField
 
-
 class NewCommentForm(forms.ModelForm):
-    captcha = CaptchaField()
+    # captcha = CaptchaField()
     parent = TreeNodeChoiceField(queryset=Comment.objects.all())
 
     def __init__(self, *args, **kwargs):

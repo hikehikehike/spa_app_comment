@@ -4,7 +4,7 @@ from .forms import NewCommentForm
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
-def post_single(request, post):
+def post_single(request):
     all_comments = Comment.objects.all()
     page = request.GET.get("page", 1)
 
@@ -20,7 +20,7 @@ def post_single(request, post):
         comment_form = NewCommentForm(request.POST)
         if comment_form.is_valid():
             comment_form.save()
-            return HttpResponseRedirect("/django-post/")
+            return HttpResponseRedirect("/")
     else:
         comment_form = NewCommentForm()
     return render(
