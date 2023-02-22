@@ -21,6 +21,9 @@ python manage.py runserver
 ```
 
 ## Installation with Docker hub
+
+Docker must be already installed
+
 ```shell
 docker pull hikehikehike/comment
 docker run -p 8001:8000 hikehikehike/comment
